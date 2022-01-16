@@ -65,7 +65,7 @@
     "less": "^4.1.1",
     "less-plugin-autoprefix": "^2.0.0",
     "less-plugin-clean-css": "^1.5.1",
-    "less-plugin-csswring": "^0.0.1",
+    "less-plugin-csswring": "github:kodie/less-plugin-csswring#patch-1",
     "run-script-os": "^1.1.6",
     "svgo": "^2.3.0",
     "web-servo": "^0.5.1"
