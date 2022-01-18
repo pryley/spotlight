@@ -1,4 +1,9 @@
-<p></p>
+> This version has been customised to work better with the Review Images add-on for Site Reviews.
+> - fixed build script on unix
+> - fixed fullscreen option
+> - fixed missing info.svg in bundle
+> - removed popstate listener
+
 <h1 align="center"><img src="https://cdn.jsdelivr.net/gh/nextapps-de/spotlight@master/demo/spotlight.svg" alt="Spotlight.js: Modern HTML5 Gallery for Images, Videos and Media" width="500px"><p></p></h1>
 <h3>Web's most easy to integrate lightbox gallery library. Super-lightweight, outstanding performance, no dependencies.</h3>
 
