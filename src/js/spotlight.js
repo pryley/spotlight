@@ -658,8 +658,9 @@ function resize_listener(){
 }
 
 function detect_fullscreen(){
-
-    toggleDisplay(maximize, (screen.availHeight - window.innerHeight) > 0);
+    if (false !== parse_option("fullscreen", controls_default["fullscreen"])) {
+        toggleDisplay(maximize, (screen.availHeight - window.innerHeight) > 0);
+    }
 }
 
 function update_widget_viewport(){
