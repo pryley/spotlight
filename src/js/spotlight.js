@@ -1256,6 +1256,7 @@ export function download(){
 export function close(hashchange){
 
     //console.log("close", hashchange);
+    if (!panel) return;
 
     setTimeout(function(){
 
