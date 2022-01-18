@@ -742,17 +742,6 @@ function toggle_listener(install){
     toggleListener(install, window, "keydown", key_listener);
     toggleListener(install, window, "wheel", wheel_listener);
     toggleListener(install, window, "resize", resize_listener);
-    toggleListener(install, window, "popstate", history_listener);
-}
-
-function history_listener(event) {
-
-    //console.log("history_listener");
-
-    if(panel && /*event.state &&*/ event.state["spl"]) {
-
-        close(true);
-    }
 }
 
 function key_listener(event){
@@ -1241,9 +1230,6 @@ function show_gallery(){
 
     //console.log("show_gallery");
 
-    history.pushState({ "spl": 1 }, "");
-    history.pushState({ "spl": 2 }, "");
-
     toggleAnimation(widget, true);
     addClass(body, "hide-scrollbars");
     addClass(widget, "show");
@@ -1283,8 +1269,6 @@ export function close(hashchange){
 
     fullscreen(false);
     toggle_listener();
-
-    history.go(hashchange === true ? -1 : -2);
 
     // teardown
 
